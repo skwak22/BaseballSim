@@ -64,10 +64,12 @@ public class Team {
 
     private void createTeamRoster() {
         String current;
+        System.out.println("This team does not exist in the current database! Manually insert players below:");
         for (int i=0;i<9;i++) {
             boolean recur = true;
             while (recur) {
-                System.out.println("Enter a name for batter number " + i + ".");
+                int j = i+1;
+                System.out.println("Enter a name for batter number " + j + ".");
                 current = kb.nextLine();
                 if (MLB.allPlayers.exists(current)) {
                     lineup[i] = current;
@@ -81,7 +83,8 @@ public class Team {
         for (int i=0;i<3;i++) {
             boolean recur = true;
             while (recur) {
-                System.out.println("Enter a name for starting pitcher number " + i + ".");
+                int j = i+1;
+                System.out.println("Enter a name for starting pitcher number " + j + ".");
                 current = kb.nextLine();
                 if (MLB.allPlayers.exists(current)) {
                     SP[i] = current;

@@ -1,4 +1,4 @@
-public class ListQueue implements Queue {
+public class ListQueue implements Queue, Library{
     private Node head;
     private Node tail;
     private int size;
@@ -17,6 +17,7 @@ public class ListQueue implements Queue {
         tail.next.previous = tail;
         tail = tail.next;
     }
+
     @Override
     public Player remove() {
         if (head.next == null) return null;
@@ -26,11 +27,15 @@ public class ListQueue implements Queue {
         return temp;
     }
     @Override
-    public void print() {
-
+    public boolean exists(String s) {
+        return head.next.exists(s);
     }
 
-    @Override
+    public Player retrieve(String s) {
+        return head.next.retrieve(s);
+    }
+
+        @Override
     public Player peek() {
         if (head.next == null) return null;
         return head.next.value;
