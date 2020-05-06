@@ -32,6 +32,6 @@ e: Exit
 
 Simulating games will give you a play-by-play rundown of the game. Afterwards, the user is able to look up any player's stats from the current series with the letter "l". Type in a player name after this prompt to retrieve their stats.
 
-##### Data Sources
+##### Data Source
 
 https://www.rotowire.com/baseball/stats.php
