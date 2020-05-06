@@ -17,11 +17,17 @@ For the lineups, both an array-based and linked list-based queue are used so tha
 Before running the program, ensure the pitcherFile and batterFile locations fit the local path of the files. This is found in the Main class (lines 5 and 6).
 
 To run the program, simply run the Main class. Then, you will be given options. Enter a letter to perform its action:
+
 s: Simulate game
+
 p: Look up a player's historic stats
+
 l: Look up player stats from the current series
+
 1: Change first team
+
 2: Change second team
+
 e: Exit
 
 Simulating games will give you a play-by-play rundown of the game. Afterwards, the user is able to look up any player's stats from the current series with the letter "l". Type in a player name after this prompt to retrieve their stats.
